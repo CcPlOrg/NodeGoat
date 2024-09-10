@@ -9,6 +9,7 @@ module.exports = {
     cryptoKey: "a_secure_key_for_crypto_here",
     cryptoAlgo: "aes256",
     hostName: "localhost",
-    environmentalScripts: []
+    environmentalScripts: [],
+    shopify_password: 'shppa_00000000000000000000000000000000'
 };
 

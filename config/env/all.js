@@ -10,6 +10,6 @@ module.exports = {
     cryptoAlgo: "aes256",
     hostName: "localhost",
     environmentalScripts: [],
-    shopify_app_password: 'shppa_00000000000000000000000000000001'
+    shopify_app_password: 'shppa_00000000000000000000000000000000'
 };
 

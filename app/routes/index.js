@@ -27,11 +27,11 @@ const index = (app, db) => {
     const isAdmin = sessionHandler.isAdminUserMiddleware;
 
     // The main page of the app
-    app.get("/", sessionHandler.displayWelcomePage);
+    app.get("/", isLoggedIn, sessionHandler.displayWelcomePage);
 
     // Login form
     app.get("/login", sessionHandler.displayLoginPage);
-    app.post("/login", sessionHandler.handleLoginRequest);
+    app.post("/login", isLoggedIn, sessionHandler.handleLoginRequest);
 
     // Signup form
     app.get("/signup", sessionHandler.displaySignupPage);
